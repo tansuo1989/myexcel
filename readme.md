@@ -9,7 +9,7 @@
  $file 要导入的.xlsx 文件
  $index 默认为0，可传入sheet的索引值，或者名字
 */
-$my=new \myexcel\myexcel($file,$index);
+$my=new \tansuo1989\myexcel($file,$index);
 
 //2.get_data
 $my->get_data($row1=false,$row2=false,$col1=false,$col2=false);

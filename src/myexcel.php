@@ -1,5 +1,5 @@
 <?php
-namespace myexcel;
+namespace tansuo1989;
 
 class myexcel{
     public $allData=array();
