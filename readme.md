@@ -6,7 +6,7 @@
 ```` php
 //1.实例化
 /* 
- $file 要导入的.xlsx 文件
+ $file 要导入的.xlsx 文件,默认为false,当只使用write方法的时候不需要传参
  $index 默认为0，可传入sheet的索引值，或者名字
 */
 $my=new \tansuo1989\myexcel($file,$index);
@@ -23,7 +23,7 @@ $my->get_data($row1=false,$row2=false,$col1=false,$col2=false);
 //3.get_row 或 get_col 获取指定行或指定列
 
 $data=$my->get_row(5,"A","E");
-$data=$my->get_col("D",3);
+$data=$my->get_col("D",2,10);
 
 //4.write 往excel文件中写入数据，并保存为 filename.xlsx 文件
 /* 
