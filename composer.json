@@ -1,0 +1,14 @@
+{   
+    "name":"myexcel",
+    "license": "Apache-2.0",
+    "description": "easy to use phpexcel to read or write",
+    "version":"0.1.0",
+    "require": {
+        "phpoffice/phpexcel": "^1.8"
+    },
+    "autoload": {
+        "psr-4":{
+            "myexcel\\":"src"
+        }
+    }
+}
