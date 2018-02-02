@@ -6,7 +6,8 @@ class myexcel{
     public $excel="";
     public $sheet="";
 
-    public function __construct($file,$index=0){
+    public function __construct($file=false,$index=0){
+        if($file==false){return;}
         $this->excel=\PHPExcel_IOFactory::load($file);
         if(is_numeric($index)){
             $this->sheet=$this->excel->getSheet($index);
